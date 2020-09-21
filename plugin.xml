@@ -87,6 +87,9 @@
      <!-- ios -->
      <platform name="ios">
          <config-file target="config.xml" parent="/*">
+           <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+                <string>제품 혹은 프로필 사진  촬영, 컨시어지 서비스 </string>
+              </edit-config>
              <feature name="Camera">
                  <param name="ios-package" value="CDVCamera" />
              </feature>
